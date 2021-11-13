@@ -83,7 +83,9 @@ public class AssassinManager {
     //pre: check if a name is in the graveyard
     //post: returns true if name is found; otherwise false
     public boolean graveyardContains(String name){
-        return containsHelper(name, graveyardFront);
+        return containsHelper(name, graveyardFront); /*Using this helper method eliminates using nested loops
+        which is a specification of the assignment */
+
     }
 
     //pre: check if there is a winner
